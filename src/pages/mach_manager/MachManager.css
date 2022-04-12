@@ -1,0 +1,38 @@
+
+
+/* 进度条样式 */
+.progress-container :global(.ant-timeline-item-tail){
+}
+.progress-item {
+
+}
+.progress-item .progress-item-title {
+    display:flex;
+    justify-content: space-between;
+}
+
+.progress-item .progress-item-content {
+    background:#171717;
+    padding:6px;
+    margin:4px 0;
+}
+.progress-item .img-container {
+    width:100%;
+}
+
+.progress-item .img-container .img-wrapper {
+    width:25%;
+    display:inline-block;
+    vertical-align: top;
+    height:70px;
+    padding-right:10px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius:4px;
+}
+/* 自动填充样式修改 */
+.form-container input:-webkit-autofill { 
+	box-shadow: 0 0 0px 1000px #333333 inset !important;
+	text-fill-color:#fff;
+	-webkit-text-fill-color: #fff;
+}

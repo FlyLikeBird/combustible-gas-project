@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const buffer = new ArrayBuffer(8);
+        const v1 = new Uint8Array(buffer);
+        const v2 = new Uint32Array(buffer);
+        // 十进制数315  =》 二进制:101011111
+        // chrome控制台查看: 5F 01 B4 00  00 00 00 00 (二进制数从低位开始按4位划分);
+        // v2[0] = 315;
+        v2[0] = 12492849;
+        const num = new Uint8Array(1);
+        num[0] = 257;
+        console.log(num);
+    </script>
+</body>
+</html>

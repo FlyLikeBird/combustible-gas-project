@@ -1,0 +1,115 @@
+.inline-container {
+    height:100%;
+}
+
+.inline-container-header {
+    height:4%;
+    color:#fff;
+    display:flex;
+    align-items: center;
+}
+.inline-container-main {
+    height:93%;
+}
+
+.inline-container .inline-item-wrapper {
+    width:33.3%;
+    height:33.3%;
+    display:inline-block;
+    vertical-align: top;
+    padding:0 1rem 1rem 0;
+}
+
+.inline-container .inline-item-wrapper .inline-item {
+    height:100%;
+    cursor: pointer;
+}
+
+.inline-container .inline-item-wrapper .inline-item .inline-item-title {
+    height:32px;
+    background-image:linear-gradient(to right, #0a9efe, #3d71fe);
+    color:#fff;
+    padding:0 6px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-container .inline-item .tag {
+    padding:6px 10px;
+    color:#fff;
+    font-size:0.8rem;
+    line-height:0.8rem;
+}
+
+.inline-container .inline-item-wrapper .inline-item .inline-item-content {
+    height:calc( 100% - 32px);
+    background-color:#183d6d;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+.inline-container .inline-item .text-container {
+    font-size:1rem;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    margin:4px 0;
+    white-space:nowrap;
+}
+
+.inline-container .inline-item .text {
+    margin-left:6px;
+    font-size:0.8rem;
+    color:rgba(255, 255, 255, 0.65);
+}
+.inline-container .inline-item .data {
+    color:#fff;
+}
+.inline-container-footer {
+    height:3%;
+}
+
+.custom-date-picker:global(.ant-picker) {
+    border:1px solid #023aff;
+    background:transparent;
+}
+.custom-date-picker:global(.ant-picker) :global(.anticon){
+    color:rgba(255 ,255, 255, 0.65);
+}
+.custom-date-picker:global(.ant-picker) :global(.ant-picker-input) > input {
+    color:rgba(255 ,255, 255, 0.65);
+}
+.date-picker-button-left {
+    background-color:#023aff;
+    color:#fff;
+    width:2rem;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+}
+
+.date-picker-button-right {
+    background-color:#023aff;
+    color:#fff;
+    width:2rem;
+    text-align: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+}
+/* @media ( max-width:1440px ){
+    .inline-container .inline-item-wrapper {
+        width:33.3%;
+    }
+} */

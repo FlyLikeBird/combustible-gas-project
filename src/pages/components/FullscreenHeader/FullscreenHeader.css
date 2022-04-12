@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "selfFont";
+    src:url('../../../../public/Quartz Regular.ttf');
+} 
+.container {
+    height:70px;
+    padding:0 1rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:relative;
+    background-position: 50% 0;
+}
+
+.weather-container {
+    position:absolute;
+    top:0;
+    left:1rem;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.btn-group {
+    position:absolute;
+    top:0;
+    right:2rem;
+    z-index:2;
+}
+
+.btn-group > .btn-item {
+    background-color:rgba(5, 119, 205, 0.5);
+    border:1px solid #04d1cd;   
+    margin-right: 1rem;
+    padding: 4px 10px;
+    color: #fff;
+    /* transform: skew(-10deg); */
+    display: inline-block; 
+}
+
+.title {
+    color:rgba(255, 255, 255, 0.5);
+    font-size:2rem;
+    font-weight:bold;
+    text-align: center;
+    margin-top:6px;
+    background-image:-webkit-linear-gradient(bottom, #c8ecfa, #adecf9);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    letter-spacing: 0.5rem;
+}
+
+.spec-time {
+    font-family:selfFont;
+    font-size:2rem;
+    color:#fff;
+    margin-right:2rem;
+}
+

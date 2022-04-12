@@ -1,0 +1,57 @@
+
+/*
+    维度分组样式
+*/
+.container {
+    display:flex;
+    height:100%;
+}
+
+.attr-container {
+    width:26%;
+    margin:0 20px;
+}
+
+.button-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.button-container > div {
+    width:50%;
+    padding:4px;
+}
+
+.button-container >div button {
+    width:100%;
+}
+
+.device-container {
+    width:74%;
+}
+
+.device-container .table-container {
+    margin-top:20px;
+}
+
+.device-container .table-container :global(.ant-table-title){
+    font-size:20px;
+    font-weight:bold;
+    padding:6px 20px;
+}
+
+.device-container .table-container thead > tr > th, .device-container .table-container tbody > tr > td {
+    padding:6px 20px;
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.tag {
+    
+}

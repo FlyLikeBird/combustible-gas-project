@@ -1,0 +1,104 @@
+.container {
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+
+.login-container {
+    position:absolute;
+    width:680px;
+    height:340px;
+    z-index:2;
+    display:flex;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /* background:rgba(11, 50, 109, 0.5); */
+    /* background-color:rgba(18,142,214,0.7);
+    border:1px solid rgba(212,212,212,.2);  */
+    background-color:rgba(255,255,255,0.05);
+    box-shadow:0 3px 6px -4px rgba(0,0,0,.12), 0 6px 16px 0 rgba(0,0,0,.08), 0 9px 28px 8px rgba(0,0,0,.05);
+}
+
+.login-container .img-container {
+    width:300px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.login-container .title {
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: 0.2rem;
+    margin-bottom:2rem;
+}
+
+.title-container {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    margin-top:-240px;
+    color:#ffa84e;
+    font-size:3rem;
+    z-index:2;
+    text-shadow: 0 4px 6px -4px rgba(0,0,0,.4), 0 6px 16px 0 rgba(0,0,0,.2), 0 9px 28px 8px rgba(0,0,0,.2);
+}
+.logo-container {
+    position:absolute;
+    left:4%;
+    top:8%;
+    display:flex;
+    align-items: center;
+    height:40px;
+    z-index:2;
+    /* border-bottom:1px solid rgb(10 45 70); */
+}
+
+.form-container {
+    /* border-top:1px solid #3c8cde; */
+    /* padding:40px; */
+    width:380px;
+    background-color:#fff;
+    padding:2rem 4rem;
+}
+
+.logo-container img {
+    height:100%;
+
+}
+
+.bg-container {
+    position:absolute;
+    left:0;
+    width:100%;
+    top:0;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.download-btn  {
+    position: fixed;
+    right: 4rem;
+    bottom: 2rem;
+    background: #04a3fe;
+    padding: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+}
+
+:global(.react-pdf__Document) {
+    background-color:#f1f1f1;
+}
+
+:global(.react-pdf__Page) {
+    width:1000px;
+    margin:0 auto;
+    margin-bottom:1rem;
+}
